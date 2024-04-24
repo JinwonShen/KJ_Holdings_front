@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJ Holdings</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="index.html">
+                이미지 로고
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="mid">
+            <div class="cont cont1">
+                <h1>슬라이드 형식 배너 영역</h1>
+            </div>
+            <div class="cont cont2">
+                <h1>cont2</h1>
+            </div>
+            <div class="cont cont3">
+                <h1>cont3</h1>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <p>회사정보/회사소개/이용약관/고객센터 등</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function makeReservation() {
+            // 예약 정보 수집
+            var date = document.getElementById("date").value;
+            var time = document.getElementById("time").value;
+            var name = document.getElementById("name").value;
+        
+            // 예약 정보 표시
+            var reservationDetails = document.getElementById("reservationDetails");
+            reservationDetails.innerHTML = "<p>예약 날짜: " + date + "</p>" +
+                                            "<p>예약 시간: " + time + "</p>" +
+                                            "<p>예약자 이름: " + name + "</p>";
+        }
+        </script>
+</body>
+</html>
