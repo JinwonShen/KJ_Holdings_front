@@ -18,15 +18,15 @@ html::-webkit-scrollbar {
 }
 html::-webkit-scrollbar-thumb {
     width: 8px;
-    background-color: #00664F;
-    border-radius: 2px;
+    background-color: #e8343abe;
+    border-radius: 100px;
 }
 html::-webkit-scrollbar-thumb:active {
-    background-color: #00362a;
+    background-color: #e8343b;
 }
 html::-webkit-scrollbar-track {
     width: 8px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 
@@ -45,6 +45,8 @@ html::-webkit-scrollbar-track {
 /* wrap */
 .wrap {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 
@@ -56,16 +58,32 @@ header {
     display: flex;
     justify-content: space-between;
 }
-header a {
-
+header .logo{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-header nav {}
+header nav {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 header nav ul{
     display: flex;
 }
-header nav ul li{}
+header nav ul li{
+    margin: 0 20px;
+}
 header nav ul li a{}
 
+header .number{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* cont */
 section.mid{
