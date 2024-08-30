@@ -54,31 +54,42 @@ html::-webkit-scrollbar-track {
 header {
     width: 100%;
     height: 100px;
-    background-color: #eee;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+header .header_wrap {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
-header .logo{
+header .header_wrap .logo{
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header nav {
+header .header_wrap nav {
     flex: 6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header nav ul{
+header .header_wrap nav ul{
     display: flex;
 }
-header nav ul li{
+header .header_wrap nav ul li{
     margin: 0 20px;
 }
-header nav ul li a{}
+header .header_wrap nav ul li a{}
 
-header .number{
+header .header_wrap .number{
     flex: 2;
     display: flex;
     justify-content: center;
@@ -86,26 +97,63 @@ header .number{
 }
 
 /* cont */
-section.mid{
+section.slick{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;
+}
+section.slick .cont{
     width: 100%;
     height: 100%;
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: column;
 }
-section.mid .cont{
+section.slick .cont .cont_wrap{
     width: 100%;
-    min-height: 300px;
-}
-section.mid .cont1{
-
-}
-section.mid .cont2{
-
-}
-section.mid .cont3{
-
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    padding-top: 10%;
 }
 
+/* L/R slide button */
+.button_wrap {
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10000;
+}
+#prevArrow{ /* L */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000
+}
+#nextArrow{ /* R */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000
+}
 
+.slick_paging {
+    /* top: 10vh;
+    left: 8%; */
+    z-index: 2;
+}
+ .slick_paging .slick-dots li {
+    display: none;
+    /* justify-content: space-between; */
+    color: #555;
+}
+ .slick_paging .slick-dots li.slick-active {
+    display: flex;
+}
+ .slick_paging .slick-dots li.slick-active span:first-of-type {
+    color: #fc919b;
+}
 /* footer */

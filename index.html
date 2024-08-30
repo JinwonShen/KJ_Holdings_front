@@ -5,36 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KJ Holdings</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <div class="wrap">
         <header>
-            <a href="index.html" class="logo">
-                로고
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">맞춤투어</a></li>
-                    <li><a href="#">여행문의</a></li>
-                </ul>
-            </nav>
-            <div class="number">
-                <a href="#">092-409-4776</a>
+            <div class="header_wrap">
+                <a href="index.html" class="logo">
+                    로고
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">맞춤투어</a></li>
+                        <li><a href="#">여행문의</a></li>
+                    </ul>
+                </nav>
+                <div class="number">
+                    <a href="#">092-409-4776</a>
+                </div>
             </div>
         </header>
-        <section class="mid">
+        <section class="slick">
             <div class="cont cont1">
-                <h1>슬라이드 형식 배너 영역</h1>
+                <div class="cont_wrap">
+                    <h1>슬라이드 형식 배너 영역</h1>
+                </div>
             </div>
             <div class="cont cont2">
-                <h1>cont2</h1>
+                <div class="cont_wrap">
+                    <h1>cont2</h1>
+                </div>
             </div>
             <div class="cont cont3">
-                <h1>cont3</h1>
+                <div class="cont_wrap">
+                    <h1>cont3</h1>
+                </div>
             </div>
+            <span class="button_wrap">
+                <div class="slick_paging"></div>
+                <button id="prevArrow">
+                    <
+                </button>
+                <button id="nextArrow">
+                    >
+                </button>
+            </span>
         </section>
+        
         <footer>
             <div>
                 <p>회사정보/회사소개/이용약관/고객센터 등</p>
@@ -42,19 +64,6 @@
         </footer>
     </div>
 
-    <script>
-        function makeReservation() {
-            // 예약 정보 수집
-            var date = document.getElementById("date").value;
-            var time = document.getElementById("time").value;
-            var name = document.getElementById("name").value;
-        
-            // 예약 정보 표시
-            var reservationDetails = document.getElementById("reservationDetails");
-            reservationDetails.innerHTML = "<p>예약 날짜: " + date + "</p>" +
-                                            "<p>예약 시간: " + time + "</p>" +
-                                            "<p>예약자 이름: " + name + "</p>";
-        }
-        </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
