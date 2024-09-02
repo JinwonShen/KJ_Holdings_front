@@ -5,6 +5,18 @@
 }
 
 
+/* 폰트 */
+@font-face {
+    font-family: "Aero_Matics_Bold";
+    src: url('../fonts/Aero-Matics-Bold.woff2') format('woff2');
+    src: url('../fonts/Aero-Matics-Bold.woff') format('woff');
+    src: url('../fonts/Aero-Matics-Bold.ttf') format('truetype');
+    src: url('../fonts/Aero-Matics-Bold.otf') format('Opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* 스크롤바 */
 html { 
     width: 100vw;
@@ -30,31 +42,15 @@ html::-webkit-scrollbar-track {
 }
 
 
-/* 폰트 */
-@font-face {
-    font-family: "Aero_Matics_Bold";
-    src: url('../fonts/Aero-Matics-Bold.woff2') format('woff2');
-    src: url('../fonts/Aero-Matics-Bold.woff') format('woff');
-    src: url('../fonts/Aero-Matics-Bold.ttf') format('truetype');
-    src: url('../fonts/Aero-Matics-Bold.otf') format('Opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 /* wrap */
-.wrap {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
+.wrap {}
 
 
 /* header */
 header {
     width: 100%;
     height: 100px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -98,13 +94,13 @@ header .header_wrap .number{
 
 /* cont */
 section.slick{
-    position: absolute;
+    /* position: relative; */
     left: 0;
     right: 0;
     margin: auto;
     width: 100vw;
     height: 100vh;
-    background-color: cadetblue;
+    background-color: #eeeeee;
 }
 section.slick .cont{
     width: 100%;
@@ -154,6 +150,54 @@ section.slick .cont .cont_wrap{
     display: flex;
 }
  .slick_paging .slick-dots li.slick-active span:first-of-type {
-    color: #fc919b;
+    color: red;
 }
+
+/* product intro */
+section.intro{
+    width: 100vw;
+}
+section.intro .intro_wrap{
+    width: 100%;
+    max-width: 1200px;
+    background-color: antiquewhite;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 100px 0;
+}
+section.intro .intro_wrap > div h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+section.intro .intro_wrap > div h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+section.intro .intro_wrap ul{
+    display: flex;
+    justify-content: center;
+}
+section.intro .intro_wrap ul li{
+    /* border: 1px solid #333; */
+    /* max-width: 328px; */
+    width: calc(1200px / 3);
+    height: 624px;
+    margin: 0 24px;
+}
+section.intro .intro_wrap ul li .img_box{
+    width: 100%;
+    height: 70%;
+    border: 1px solid #333;
+}
+section.intro .intro_wrap ul li > p{
+    width: 100%;
+    padding: 10px;
+}
+
+
+
 /* footer */
+footer{
+    /* position: relative; */
+}
