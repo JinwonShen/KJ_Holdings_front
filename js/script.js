@@ -34,3 +34,15 @@ visual.slick({
         );
     }
 });
+
+
+/* tip area (tab menu) */
+$(function(){
+    $('.tabcontent > div').hide();
+    $('.tabnav li a').click(function () {
+      $('.tabcontent > div').hide().filter(this.hash).fadeIn();
+      $('.tabnav li a').removeClass('active');
+      $(this).addClass('active');
+      return false;
+    }).filter(':eq(0)').click();
+    });
